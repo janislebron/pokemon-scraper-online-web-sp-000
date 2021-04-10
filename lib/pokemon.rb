@@ -3,7 +3,7 @@ class Pokemon
 
   def initialize
     @name = name
-    @id = id 
+    @id = id
     @type = type
     @db = db
   end
