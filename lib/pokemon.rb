@@ -7,4 +7,12 @@ class Pokemon
     @type = type
     @db = db
   end
+
+  def save
+    sql = <<-SQL
+    INSERT INTO pokemons(name, type, db)
+    VALUES (?, ?, ?)
+    SQL
+  end
+
 end
